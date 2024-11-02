@@ -11,6 +11,7 @@ import PagetoRead from './Components/PagetoRead/PagetoRead';
 import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
 import Error from './Components/Error/Error';
+import BookDetail from './Components/BookDetail/BookDetail';
 
 
 const router = createBrowserRouter([
@@ -24,8 +25,8 @@ const router = createBrowserRouter([
         element:<Home></Home>
       },
       {
-        path:'listed',
-        element:<ListedBooks></ListedBooks>
+        path:'book/:bookId',
+        element:<BookDetail></BookDetail>
       }
     ]
   }
