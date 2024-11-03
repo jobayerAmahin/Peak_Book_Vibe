@@ -18,7 +18,7 @@ const BookDetail = () => {
             <h1 className='text-2xl text-red-400'>{bookName}</h1>
             <img className='w-60 h-80' src={image} alt="" />
             <div className='flex justify-between items-center'>
-                <button onClick={()=>addToLocalStorage(bookId)} className='btn bg-green-500'>Mark As Read</button>
+                <button onClick={()=>handleMarkBtn(bookId)} className='btn bg-green-500'>Mark As Read</button>
                 <button className='btn bg-purple-500'>Suggest To Friends</button>
             </div>
         </div>
